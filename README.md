@@ -5,8 +5,9 @@
 3. In phpMyAdmin create new database (you can do that my clicking admin button in MySQL service in XAMPP)
 4. Change name of .env.example to .env and change credentials of your database (default user is root without password)
 5. Install composer in your project with command `composer install`
-6. Now run this command in your terminal or other cli `php artisan migrate` (it will change structure of your databse to one that you need)
-7. Run your backend with this command `php artisan serve`
+6. Generate your laravel app key with `php artisan key:generate`
+7. Now run this command in your terminal or other cli `php artisan migrate` (it will change structure of your databse to one that you need)
+8. Run your backend with this command `php artisan serve`
 
 **Remeber, when CORS error occurs, to install anti-CORS like extension**
 
