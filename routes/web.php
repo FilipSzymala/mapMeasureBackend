@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MapController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::post('/create-marker', [MapController::class, 'createMarker']);
+Route::post('/delete-marker/{id}', [MapController::class, 'deleteMarker']);
+Route::get('/get-marker-data', [MapController::class, 'getMarker']);
